@@ -1,0 +1,14 @@
+# Azure VM Setup - Project Notes
+
+Date: April 2025
+
+- Created resource group: RG-FreeLab
+- Deployed Windows Server 2019 Datacenter (Gen 1)
+- Selected B1s size to stay within free tier
+- Enabled RDP (port 3389) during deployment
+- Installed IIS using PowerShell:
+    Install-WindowsFeature -Name Web-Server -IncludeManagementTools
+- Opened HTTP port 80 in NSG
+- Verified localhost and public IP
+- Took snapshot backup using Azure portal
+- Enabled auto-shutdown at 8PM daily
